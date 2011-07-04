@@ -1,0 +1,33 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Dario Taraborelli (2008)
+% The Beauty of LaTeX
+% URL: http://nitens.org/taraborelli/latex
+% Some rights reserved: CC-BY-SA
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[dvipdfm, colorlinks, breaklinks, pdftitle={The Beauty of LaTeX},pdfauthor={Taraborelli, Dario}]{hyperref}
+\usepackage[usenames]{color}
+\definecolor{Gray}{rgb}{.7,.7,.7}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+
+\newcommand{\red}[1]{\color{red} #1}
+\newcommand{\old}[1]{\fontspec[Alternate=1,Ligatures={Common, Rare}, Swashes={LineInitial, LineFinal}]{Hoefler Text}\fontsize{24pt}{30pt}\selectfont #1}%
+\newcommand{\smallprint}[1]{\fontspec{Adobe Garamond Pro}\fontsize{10pt}{13pt}\color{Gray}\selectfont #1}%
+
+\begin{document}
+\thispagestyle{empty}
+\old\begin{quote}
+{\red Q}ue di{\red ct}es vous de mon appel,\\
+Garnier ? Fis je sens ou folie ?\\
+Toute be{\red st}e garde sa pel\\
+{\red Q}ui la contraint, e{\red ff}orce ou lie\\
+S'elle peut, elle se deslie
+\end{quote}
+\vfill{}
+\raggedleft\smallprint{D. Taraborelli (2008), \href{http://nitens.org/taraborelli/latex}{The Beauty of \LaTeX}\\\emph{Some rights reserved}. \href{http://creativecommons.org/licenses/by-sa/3.0/}{\textsc{cc-by-sa}}
+}
+\end{document}

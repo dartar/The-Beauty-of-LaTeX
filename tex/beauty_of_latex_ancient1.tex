@@ -1,0 +1,27 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Dario Taraborelli (2008)
+% The Beauty of LaTeX
+% URL: http://nitens.org/taraborelli/latex
+% Some rights reserved: CC-BY-SA
+
+\documentclass[11pt]{article}
+\usepackage{fontspec, graphicx}
+\usepackage[dvipdfm, colorlinks, breaklinks, pdftitle={The Beauty of LaTeX},pdfauthor={Taraborelli, Dario}]{hyperref}
+\usepackage[usenames]{color}
+\definecolor{Gray}{rgb}{.7,.7,.7}
+\newcommand{\red}[1]{\color{red} #1}
+\newcommand{\oldm}{\fontspec[Alternate=0,Style=Historic,Contextuals={Inner},Ligatures={Common, Rare}]{Minion Pro}\fontsize{24pt}{30pt}\selectfont}%
+\newcommand{\oldmit}[1]{\fontspec[Alternate=0,Style=Historic,Ligatures={Common, Rare}, Contextuals={Inner}]{Minion Pro Italic}\fontsize{24pt}{30pt}\selectfont #1}%
+\newcommand{\smallprint}[1]{\fontspec{Adobe Garamond Pro}\fontsize{10pt}{13pt}\color{Gray}\selectfont #1}%
+
+\begin{document}
+\thispagestyle{empty}
+\noindent{\oldmit A{\red sp}ice, a{\red st}ice, la{\red ct}o{\red si}o, I{\red sl}am, a{\red sfissi}a}\\[.3cm]
+{\oldm A{\red sp}ice, a{\red st}ice, la{\red ct}o{\red si}o, I{\red sl}am, a{\red sfissi}a}
+
+\vfill{}
+\raggedleft\smallprint{D. Taraborelli (2008), \href{http://nitens.org/taraborelli/latex}{The Beauty of \LaTeX}\\\emph{Some rights reserved}. \href{http://creativecommons.org/licenses/by-sa/3.0/}{\textsc{cc-by-sa}}
+}
+\end{document}

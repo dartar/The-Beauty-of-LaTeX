@@ -1,0 +1,32 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Dario Taraborelli (2008)
+% The Beauty of LaTeX
+% URL: http://nitens.org/taraborelli/latex
+% Some rights reserved: CC-BY-SA
+
+\documentclass[11pt]{article}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{fontspec, graphicx}
+\usepackage[dvipdfm, colorlinks, breaklinks, pdftitle={The Beauty of LaTeX},pdfauthor={Taraborelli, Dario}]{hyperref}
+\usepackage[usenames]{color}
+\definecolor{Gray}{rgb}{.7,.7,.7}
+\newcommand{\smallprint}[1]{\fontspec{Adobe Caslon Pro}\fontsize{10pt}{13pt}\color{Gray}\selectfont #1}%
+
+\begin{document}
+\thispagestyle{empty}
+{\fontsize{12}{12}
+\fontspec{HoeflerText-Italic}
+{\addfontfeature{Color=00FF0044, Scale=4, Alternate=1}Q}\kern-4ex
+{\addfontfeature{Color=FF000033, Scale=8, Alternate=1}Q}\kern-8ex
+{\addfontfeature{Color=0000FF22, Scale=16, Alternate=1}Q}\kern-16ex
+}
+
+\vfill{}
+\raggedleft\smallprint{D. Taraborelli (2008), \href{http://nitens.org/taraborelli/latex}{The Beauty of \LaTeX}\\\emph{Some rights reserved}. \href{http://creativecommons.org/licenses/by-sa/3.0/}{\textsc{cc-by-sa}}
+}
+\end{document}
+

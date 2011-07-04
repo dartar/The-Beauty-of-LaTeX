@@ -1,0 +1,32 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Dario Taraborelli (2008)
+% The Beauty of LaTeX
+% URL: http://nitens.org/taraborelli/latex
+% Some rights reserved: CC-BY-SA
+
+\documentclass[11pt]{article}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{fontspec, graphicx}
+\usepackage[dvipdfm, colorlinks, breaklinks, pdftitle={The Beauty of LaTeX},pdfauthor={Taraborelli, Dario}]{hyperref}
+\usepackage[usenames]{color}
+\definecolor{Gray}{rgb}{.7,.7,.7}
+\definecolor{Black}{rgb}{0,0,0}
+\definecolor{Red}{rgb}{1,0,0}
+\newcommand{\smallprint}[1]{\fontspec{Adobe Garamond Pro}\fontsize{10pt}{13pt}\color{Gray}\selectfont #1}%
+
+\newcommand{\red}[1]{\color{Red} #1}
+\newcommand{\sw}[1]{\fontspec[Ligatures={Common}]{Hoefler Text}\fontsize{48pt}{48pt}\color{Black}\selectfont #1}%
+
+\begin{document}
+\thispagestyle{empty}
+\sw {\red fi}\sw{re} {\red fl}ower {\red fj}örd\\
+
+\vfill{}
+\raggedleft\smallprint{D. Taraborelli (2008), \href{http://nitens.org/taraborelli/latex}{The Beauty of \LaTeX}\\\emph{Some rights reserved}. \href{http://creativecommons.org/licenses/by-sa/3.0/}{\textsc{cc-by-sa}}
+}
+\end{document}
+

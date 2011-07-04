@@ -1,0 +1,46 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+% Dario Taraborelli (2008)
+% The Beauty of LaTeX
+% URL: http://nitens.org/taraborelli/latex
+% Some rights reserved: CC-BY-SA
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[dvipdfm, colorlinks, breaklinks, pdftitle={The Beauty of LaTeX},pdfauthor={Taraborelli, Dario}]{hyperref}
+\usepackage[usenames]{color}
+\definecolor{Gray}{rgb}{.7,.7,.7}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{geometry}
+\usepackage{fontspec}
+\setromanfont [Swashes={NoWordInitial, NoWordFinal, NoLineInitial, NoLineFinal, NoInner}]{Adobe Caslon Pro}
+\newcommand{\smallprint}[1]{\fontspec{Adobe Caslon Pro}\fontsize{10pt}{13pt}\color{Gray}\selectfont #1}%
+\usepackage[expansion=true,protrusion=true]{microtype}
+
+\geometry{textwidth=4cm}
+\setlength{\parindent}{4mm}
+\pagestyle{empty}
+\hyphenation{Alice}
+
+\begin{document}
+\pretolerance=-1
+\tolerance=2300
+\adjdemerits=6400
+\doublehyphendemerits=90000
+\finalhyphendemerits=14400
+
+‘Oh, I've had such a curious dream!’\ said Alice,
+and she told her sister, as well as she could remember them, all
+these strange Adventures of hers that you have just been reading
+about; and when she had finished, her sister kissed her, and said,
+‘It \emph{was} a curious dream, dear, certainly: but now run
+in to your tea; it’s getting late.’ So Alice got up and
+ran off, thinking while she ran, as well she might, what a wonderful
+dream it had been.
+\vfill{}
+\raggedleft\smallprint{D. Taraborelli (2008)\\\href{http://nitens.org/taraborelli/latex}{The Beauty of \LaTeX}\\\emph{Some rights reserved}. \href{http://creativecommons.org/licenses/by-sa/3.0/}{\textsc{cc-by-sa}}
+}
+\end{document}
